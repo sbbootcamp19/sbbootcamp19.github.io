@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+        <title>Resume</title>
+        <style>
+            * {
+                font-family: "Roboto", sans-serif
+            }
+
+            :root {
+                font-size: 10px;
+            }
+
+            html, body {
+                height: 100%;
+                width: 100%;
+            }
+
+            body {
+                margin-top: 5px;
+                background-color: #f1f1f1
+            }
+
+            .container {
+                width: 50%;
+                margin: auto;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 40% 60%;
+                column-gap: .5rem;
+            }
+            
+            .column {
+                background-color: #FFF;
+            }
+
+            .left {
+                padding: 10px;
+            }
+
+            .right {
+                padding: 15px;
+            }
+
+            .img-container {
+                display: flex;
+                justify-content: center;
+            }
+
+            .name {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Page Container -->
+        <div class="container">
+
+            <!-- The Grid -->
+            <div class="grid">
+                <div class="column left"><!-- Left Column -->
+                    <div class="img-container">
+                        <img src="https://github.com/sbbootcamp19/sbbootcamp19.github.io/person-1024x1024.jpg?raw=true" alt="John Doe" width="200px" />
+                    </div>
+                    
+                    <h2 class="name">James Doe</h2>
+
+                    <br />
+
+                    <div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Job</strong></td>
+                                    <td>Designer</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Place</strong></td>
+                                    <td>London, UK</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Email</strong></td>
+                                    <td>james.doe@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Phone</strong></td>
+                                    <td>(224) 435-0534</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr>
+
+                        <div>
+                            <h3>Skills</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>VS Code</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>English</li>
+                                <li>Spanish</li>
+                                <li>Chinese</li>
+                            </ul>
+                        </div>
+                        <br>
+                    </div>
+                </div> <!-- end left column-->
+
+                <div class="column right"> <!-- Right Column -->
+                    <div>
+                        <h2>Work Experience</h2>
+                        <div>
+                            <h5><b>Package Handler / Amazon</b></h5>
+                            <h6><i>Jan 2015 - <span>Current</span></i></h6>
+                            <p>Compiles, scans, seals, and loads various packages before they're delivered. Main duties include placing items into packages, confirming packaging labels, and lifting and loading heavy packages into trucks.</p>
+                        </div>
+                        
+                        <hr />
+
+                        <div>
+                            <h5><b>Baker / Panera Bread</b></h5>
+                            <h6><i>Jun 2012 - Mar 2020</i></h6>
+                            <p>Baked goods for hundreds of customers. Trained other new bakers. </p><br>
+                        </div>
+                        
+                        <hr />
+
+                        <div>
+                            <h5><b>Starbucks / Barista</b></h5>
+                            <h6><i>Mar 2012 - Dec 2014</i></h6>
+                            <p>Made and served beverages such as coffee, tea and specialty beverages. Responsible for taking customer orders and payments. They also clean and sanitize their work areas, seating areas and equipment/tools.</p>
+                            <hr>
+                        </div>
+                    </div>
+                
+                    <div>
+                        <h2>Education</h2>
+                        <div>
+                        <h5><b>SpringBoard Bootcamp</b></h5>
+                        <h6><i>Feb. 21 - Current</i></h6>
+                        <p>Web Development! Learn about front end development, built a bunch of cool projects!!</p>
+                        <hr />
+                        </div>
+                        <div>
+                        <h5><b>Arts School</b></h5>
+                        <h6><i>2013 - 2015</i></h6>
+                        <p>Bachelor Degree</p>
+                        <hr />
+                        </div>
+                        <div>
+                        <h5><b>General High</b></h5>
+                        <h6><i>2006 - 2010</i></h6>
+                        <p>High School Diploma</p>
+                        </div>
+                    </div>
+                </div> <!-- end right column -->
+            </div>
+        </div>
+    </body>
+</html>
