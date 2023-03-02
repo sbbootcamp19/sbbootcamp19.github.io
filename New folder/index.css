@@ -107,9 +107,106 @@ nav ul li a:hover {
     width: 50%;
 }
 
+/* smaller screens */
+@media screen and (max-width: 850px) {
+    img, img :not(.image-logo) {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .header .logo {
+        width: 40%;
+        padding: 0;
+        padding-bottom: 0px;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .header h1 {
+        display: block;
+        font-size: 2rem;
+        width: 40%;
+    }
+
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        padding: 70px;
+        /* teaching point we want to show how to center an image inside of a div see intro-left-side img and convert it to intro-left-side div img */
+        padding-right: 0;
+        /* once we start teaching about centering an image inside of a div we can add padding-right */
+        /* background-color: #6a26db; */
+        background-color: #582a82;
+    }
+
+    .intro-left-side {
+        width: 50%;
+    }
+}
+
+/* larger screens */
+@media screen and (min-width: 860px) {
+    .header h1 {
+        display: none;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        padding: 70px;
+        /* teaching point we want to show how to center an image inside of a div see intro-left-side img and convert it to intro-left-side div img */
+        padding-right: 0;
+        /* once we start teaching about centering an image inside of a div we can add padding-right */
+        /* background-color: #6a26db; */
+        background-color: #582a82;
+    }
+
+    .intro-left-side {
+        width: 50%;
+        color: white;
+        padding: 30px;
+        /* teaching point specifically */
+        font-size: 4rem;
+    }
+
+    .intro-left-side h1 {
+        font-size: 5rem;
+        color: white;
+    }
+
+    .intro-left-side p {
+        font-size: 2rem;
+        color: white;
+    }
+
+    .intro-left-side a {
+        background-color: #ff523d;
+        border: 1px solid transparent;
+        border-color: #ff523d;
+        color: white;
+        border-radius: 5px;
+        font-weight: bolder;
+        padding: 16px 32px;
+    }
+
+    .intro-right-side {
+        width: 50%;
+    }
+}
+
 .intro-right-side img {
-    width: 700px;
-    height: 500px;
+    /* width: 700px;
+    height: 500px; */
+    width: 70%;
+    height: 70%;
     border-radius: 10px;
 }
 
