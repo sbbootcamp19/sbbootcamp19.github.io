@@ -1,0 +1,359 @@
+* {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #6c757d;
+    line-height: 1.6666;
+    font-weight: 400;
+}
+
+:root {
+    font-size: 10px;
+}
+
+* {
+    font-size:  1.7rem;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.header .logo {
+    width: 20%;
+    padding: 0;
+    padding-bottom: 0px;
+}
+
+.header .logo img {
+    width: 70px;
+    padding: 0;
+}
+
+.header nav {
+    width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    padding: 30px;
+    font-weight: 900;
+}
+
+nav ul li a:hover {
+    background-color: #582a82;
+    color: #FFF;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+    /* teaching point we want to show how to center an image inside of a div see intro-left-side img and convert it to intro-left-side div img */
+    padding-right: 0;
+    /* once we start teaching about centering an image inside of a div we can add padding-right */
+    /* background-color: #6a26db; */
+    background-color: #582a82;
+}
+
+.intro-left-side {
+    width: 50%;
+    color: white;
+    padding: 30px;
+    /* teaching point specifically */
+    font-size: 4rem;
+}
+
+.intro-left-side h1 {
+    font-size: 5rem;
+    color: white;
+}
+
+.intro-left-side p {
+    font-size: 2rem;
+    color: white;
+}
+
+.intro-left-side a {
+    background-color: #ff523d;
+    border: 1px solid transparent;
+    border-color: #ff523d;
+    color: white;
+    border-radius: 5px;
+    font-weight: bolder;
+    padding: 16px 32px;
+}
+
+.intro-right-side {
+    width: 50%;
+}
+
+.intro-right-side img {
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.intro-right-side div {
+    display: flex;
+    justify-content: center;;
+}
+
+.pet-sharing {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+}
+
+.pet-sharing-left-side {
+    width: 50%;
+}        
+
+.pet-sharing-left-side div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.pet-sharing-left-side img {
+    /* width: 400px;
+    height: 300px; */
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    
+}
+
+.pet-sharing-right-side {
+    width: 40%;
+}
+.pet-sharing-right-side h1 {
+    font-size: 4rem;
+}
+
+
+.pet-care {
+    padding: 80px;
+    background-color: #582a82;
+    display: flex;
+    flex-direction: row;
+}
+
+.pet-care-left-side {
+    width: 50%;
+}
+
+.pet-care-left-side h1,
+.pet-care-left-side p {
+    color: white;
+}
+
+.pet-care-left-side h1 {
+    font-size: 4rem;
+}
+
+.pet-care-left-side p {
+    font-size: 1.7rem;
+}
+
+.pet-care-right-side {
+    width: 50%;
+}
+
+.pet-care-right-side div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pet-care-right-side div img {
+    border-radius: 10px;
+}
+
+.call-center {
+    padding: 80px;
+    background-color: #f6f6fa;
+    display: flex;
+    flex-direction: row;
+}
+
+.call-center-left-side {
+    width: 50%;
+}
+
+.call-center-left-side div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-center-left-side div img {
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.call-center-right-side {
+    width: 30%;
+}
+
+.call-center-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.call-center-right-side h1 {
+    font-size: 4.1rem;
+    font-weight: bolder;
+    color: #3c3e40;
+}
+
+.call-center-right-side .button-group a {
+    font-size: 1.7rem;
+    padding: 16px 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+
+
+/* Let's Get Started button */
+.call-center-right-side .button-group a:first-child {
+    background-color: #ff523d;
+    border: 1px solid transparent;
+    border-color: #ff523d;
+    color: white;
+}
+
+/* View Pricing button */
+.call-center-right-side .button-group a:nth-child(2) {
+    color: #3c3e40;
+    border: 1px solid #cecece;
+}
+
+
+/* Begin Bottom Links */
+.bottom-links {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.7rem;
+    padding: 80px;
+}
+
+.bottom-links .left-side {
+    width: 50%;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-links .left-side h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-links .left-side p {
+    width: 50%;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-links .right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-links .right-side col p {
+    font-weight: 900;
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-links .right-side ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.8rem;
+    margin-right: 20px;
+}
+
+.bottom-links .right-side .col p {
+    font-size: 1.8rem;
+    font-weight: bolder;;
+}
+/* End Bottom Links */
+
+.divider {
+    width: 75%;
+    border: 1px solid #f5f3f3;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    padding: 10px 80px;
+}
+
+footer .left-side {
+    width: 50%;
+}
+
+footer .left-side p {
+    text-align: center;
+}
+
+footer .right-side {
+    width: 50%;
+}
+
+footer .right-side ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .right-side ul li {
+    margin-right: 10px;
+}
+
+footer .right-side ul li::after {
+    content: "|";
+    padding-left: 10px;
+}
+
+footer .right-side ul li:last-child::after {
+    content: "";
+}
