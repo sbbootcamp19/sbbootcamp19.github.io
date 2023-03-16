@@ -1,4 +1,4 @@
-const input = document.querySelector(".inputControl");
+const input = document.querySelector(".input-control");
 const buttons = document.querySelectorAll(".button");
 
 let shouldReset = false;
