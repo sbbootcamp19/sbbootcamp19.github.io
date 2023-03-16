@@ -1,241 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-        <title>Resume</title>
-        <style>
-            :root {
-                font-size: 10px;
-            }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
 
-            * {
-                font-family: "Roboto", sans-serif;
-                box-sizing: border-box;
-            }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="calculator.css" />
+</head>
+<body>
+    <div class="app">
+        <div class="calculator">
+            <div class="input">
+                <input class="inputControl" type="text" readonly />
+            </div>
+            <div class="button-group">
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button">x</div>
+            </div>
 
-            html, body {
-                height: 100%;
-                width: 100%;
-            }
+            <div class="button-group">
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button">-</div>
+            </div>
 
-            body {
-                margin-top: 5px;
-                background-color: #f1f1f1
-            }
+            <div class="button-group">
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">+</div>
+            </div>
 
-            
-            .container {
-                width: 50%;
-                margin: auto;
-            }
-
-            .column {
-                background-color: #FFF;
-            }
-            
-            td {
-                word-break: break-all;
-            }
-
-            .name {
-                text-align: center;
-            }
-
-            .img-container {
-                display: flex;
-                justify-content: center;
-            }
-
-            img {
-                width: 80%;
-            }
-
-            @media screen and (max-width: 850px) {
-                .grid {
-                    display: flex;
-                    flex-direction: column;
-                }
-                
-                .left {
-                    padding: 10px;
-                    width: 100%;
-                    margin-right: .5rem;
-                }
-
-                .right {
-                    margin-top: 10px;
-                    padding: 15px;
-                    width: 100%;
-                }
-
-                td, li, p {
-                    font-size: 1.3rem;
-                }
-            }
-
-            @media screen and (min-width: 860px) {
-                td, li, p {
-                    font-size: 1.5rem;
-                }
-
-                .grid {
-                    display: flex;
-                    flex-direction: row;
-                }
-                
-                .column {
-                    background-color: #FFF;
-                }
-
-                td {
-                    word-break: break-all;
-
-                }
-
-                .left {
-                    padding: 10px;
-                    width: 40%;
-                    margin-right: .5rem;
-                }
-
-                .right {
-                    margin-top: 0;
-                    padding: 15px;
-                    width: 60%;
-                }
-
-                
-            }
-        </style>
-    </head>
-
-    <body>
-
-        <!-- Page Container -->
-        <div class="container">
-
-            <!-- The Grid -->
-            <div class="grid">
-                <div class="column left"><!-- Left Column -->
-                    <div class="img-container">
-                        <img src="https://github.com/sbbootcamp19/sbbootcamp19.github.io/blob/main/person-1024x1024.jpg?raw=true" alt="John Doe" />
-                    </div>
-                    
-                    <h2 class="name">James Doe</h2>
-
-                    <br />
-
-                    <div>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Job</strong></td>
-                                    <td>Designer</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Place</strong></td>
-                                    <td>London, UK</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Email</strong></td>
-                                    <td>james.doe@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Phone</strong></td>
-                                    <td>(224) 435-0534</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <hr>
-
-                        <div>
-                            <h3>Skills</h3>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
-                                <li>VS Code</li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3>Languages</h3>
-                            <ul>
-                                <li>English</li>
-                                <li>Spanish</li>
-                                <li>Chinese</li>
-                            </ul>
-                        </div>
-                        <br>
-                    </div>
-                </div> <!-- end left column-->
-
-                <div class="column right"> <!-- Right Column -->
-                    <div>
-                        <h2>Work Experience</h2>
-                        <div>
-                            <h5><b>Package Handler / <a href="https://amazon.com/" target="_blank">Amazon</a></b></h5>
-                            <h6><i>Jan 2015 - <span>Current</span></i></h6>
-                            <p>Compiles, scans, seals, and loads various packages before they're delivered. Main duties include placing items into packages, confirming packaging labels, and lifting and loading heavy packages into trucks.</p>
-                        </div>
-                        
-                        <hr />
-
-                        <div>
-                            <h5><b>Baker</b> / <a href="https://www.panerabread.com/en-us/home.html" target="_blank">Bread</a></h5>
-                            <h6><i>Jun 2012 - Mar 2020</i></h6>
-                            <p>Baked goods for hundreds of customers. Trained other new bakers. </p><br>
-                        </div>
-                        
-                        <hr />
-
-                        <div>
-                            <h5><b>Starbucks</b> / <a href="https://www.starbucks.com/" target="_blank">Barista</a></h5>
-                            <h6><i>Mar 2012 - Dec 2014</i></h6>
-                            <p>Made and served beverages such as coffee, tea and specialty beverages. Responsible for taking customer orders and payments. They also clean and sanitize their work areas, seating areas and equipment/tools.</p>
-                            <hr>
-                        </div>
-                    </div>
-                
-                    <div>
-                        <h2>Education</h2>
-                        <div>
-                            <h5><b>SpringBoard Bootcamp</b></h5>
-                            <div>
-                                <a href="https://www.springboard.com/" target="_blank">Visit site</a>
-                            </div>
-                            <h6><i>Feb. 21 - Current</i></h6>
-                            <p>Web Development! Learn about front end development, built a bunch of cool projects!!</p>
-                        </div>
-                        
-                        <hr />
-
-                        <div>
-                            <h5><b>Arts School</b></h5>
-                            <div>
-                                <a href="https://www.academyart.edu/" target="_blank">Visit site</a>
-                            </div>
-                            <h6><i>2013 - 2015</i></h6>
-                            <p>Bachelor Degree</p>
-                        </div>
-                        
-                        <hr />
-
-                        <div>
-                            <h5><b>General High</b></h5>
-                            <div>
-                                <a href="https://www.esuhsd.org/" target="_blank">Visit site</a>
-                            </div>
-                            <h6><i>2006 - 2010</i></h6>
-                            <p>High School Diploma</p>
-                        </div>
-                    </div>
-                </div> <!-- end right column -->
+            <div class="button-group">
+                <div class="button">C</div>
+                <div class="button">0</div>
+                <div class="button">.</div>
+                <div class="button equal">=</div>
             </div>
         </div>
-    </body>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
 </html>
