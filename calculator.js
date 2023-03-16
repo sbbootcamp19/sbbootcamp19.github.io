@@ -10,7 +10,7 @@ function clearAll() {
 
 function endsInOperator(value) {
     // check to make sure the end does not contain an operator
-    return ["+", "-", "/", "x"].includes(value[value.length - 1]);
+    return ["+", "-", "/", "*"].includes(value[value.length - 1]);
 }
 
 function performOperator(op) {
@@ -32,7 +32,7 @@ for(let button of buttons) {
             case "/":
                 performOperator("/");
                 break;
-            case "x":
+            case "*":
                 performOperator("*");
                 break;
             case "C":
